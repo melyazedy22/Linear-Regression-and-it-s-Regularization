@@ -1,5 +1,55 @@
 # Linear-Regression-and-it-s-Regularization
-# 🚗 Used Cars Price Prediction (Regularization Practice) ((( Session 2 in ML)))
+---
+# 📈 Linear Regression Practice: OLS & Gradient Descent *(Session 1 in ML)*
+
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
+![Scikit-Learn](https://img.shields.io/badge/Library-Scikit--Learn-orange)
+![Status](https://img.shields.io/badge/Status-Completed-success)
+
+## 📌 Project Overview
+This project demonstrates the implementation of **Linear Regression** using two different approaches: **Ordinary Least Squares (OLS)** via Scikit-Learn and a manual implementation of **Gradient Descent**. The goal is to predict student performance (GPA) based on SAT scores, providing a clear comparison between the analytical and iterative methods of regression.
+
+
+
+[Image of simple linear regression plot]
+
+
+## 🛠️ Workflow & Methodology
+
+### 1. Data Preprocessing
+* **Dataset:** USA Student Data (SAT scores vs. GPA).
+* **Cleaning:** Checked for missing values and ensured data integrity.
+* **Visualization:** Plotted scatter charts to visualize the positive correlation between SAT scores and GPA.
+
+### 2. Modeling Approaches
+* **Ordinary Least Squares (OLS):**
+    * Implemented using `sklearn.linear_model.LinearRegression`.
+    * Solves for the best-fitting line analytically.
+* **Gradient Descent (Manual Implementation):**
+    * Developed a custom function to iteratively update the regression coefficients (slope `m` and intercept `c`).
+    * Minimized the Cost Function (Mean Squared Error) over multiple epochs.
+* **Polynomial Regression:**
+    * Experimented with `PolynomialFeatures` (Degree 2) to capture non-linear relationships.
+
+### 3. Evaluation & Visualization
+* **Metrics:** Evaluated models using R² Score and coefficients (Slope & Intercept).
+* **Plots:**
+    * **Regression Line:** Visualized the best-fit line over the training data.
+    * **Loss Curve:** Plotted the cost function over iterations to verify convergence in Gradient Descent.
+
+## 📊 Results
+* **Convergence:** The Gradient Descent algorithm successfully converged, producing coefficients very close to the Scikit-Learn OLS solution.
+* **Polynomial Fit:** The Degree 2 polynomial model provided a slightly flexible curve, potentially capturing subtle non-linearities in the SAT-GPA relationship.
+
+## ⚙️ Technologies Used
+* **Python**
+* **Pandas & NumPy** (Data Manipulation & Math)
+* **Matplotlib & Seaborn** (Data Visualization)
+* **Scikit-Learn** (OLS Modeling & Preprocessing)
+---
+---
+---
+# 🚗 Used Cars Price Prediction (Regularization Practice) *( Session 2 in ML)*
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![Scikit-Learn](https://img.shields.io/badge/Library-Scikit--Learn-orange)
@@ -34,13 +84,4 @@ The project explores multiple regression approaches to find the best fit:
 * **Pandas & NumPy** (Data Manipulation)
 * **Scikit-Learn** (Modeling, Preprocessing, Model Selection)
 
-## 🚀 How to Run
-1.  **Clone the repository** (or download the files).
-2.  **Install requirements:**
-    ```bash
-    pip install pandas numpy scikit-learn
-    ```
-3.  **Launch Jupyter Notebook:**
-    ```bash
-    jupyter notebook "Used_Cars_Practice+L1&L2 Regularization .ipynb"
-    ```
+
